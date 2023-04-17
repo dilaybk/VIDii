@@ -12,10 +12,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Dilay Bayraktaroglu
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste dingen toe
 
 
 
@@ -26,15 +26,16 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/mickeymousesketch1.png" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/mickeymousesketch2.png" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/mickeymousesketch3.png" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Beter worden in animeren met CSS - heel misschien JS als ik het niet te moeilijk vind
+  - Horizontaal scrollen heb ik nooit gedaan dus dat lijkt me leuk om uit te proberen
+  - In het algemeen weer het coderen een beetje oppakken
  
 </details>
 
