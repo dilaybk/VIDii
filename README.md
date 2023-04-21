@@ -49,10 +49,20 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  <img src="readme-images/fb1.png" width="375px" alt="feedback sessie 1">
+  - Misschien moet ik minder 'soorten' Mickeys gebruiken (De belangrijkste/bekendste Mickeys)
+  - Objecten en andere characters interactief maken met Mickey
+  - Nadenken over de bediening (Scrollen of met een knop)
+  - De achtergronden maakt het interessanter
+  - Easter egg: Characters die uit een object verschijnen bijvoorbeeld
+  - Easter egg: Referenties naar andere elementen waar Mickey in voorkomt (In Aladdin is er bijvoorbeeld een referentie naar Mickey waarbij 'Genie' de Steamboat Willie tune fluit)
+
+  <img src="readme-images/mickeymouse.png" width="375px" alt="feedback sessie 1">
+
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik heb eigenlijk na dag 1 besloten om van character te veranderen. Sinds Mickey Mouse copyright .... heeft, kan ik dit project bijvoorbeeld niet op mijn portfolio zetten. Dus ga ik kiezen om door te gaan met Winnie The Pooh. Winnie is nu namelijk public domain, waardoor ik geen zorgen hoef te maken over copyright.
 
 
   ### Bevinding 2:

@@ -1,14 +1,12 @@
+
+
 /*************/
 /* CSS RESET */
 /*************/
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-body {
-  margin:0;
+  box-sizing:border-box;
 }
 
 button:not([disabled]) {
@@ -17,29 +15,247 @@ button:not([disabled]) {
 
 
 
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 :root {
-  --color-headings:crimson
+  --color-headings:rgb(39 39 39);
+  --color-font: black;
+  --font-family: "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --body-bg-color: rgb(255 235 214);
+
 }
-
-
-
 
 
 /********************/
 /* ALGEMENE STYLING */
 /********************/
 
-h1 {
-  color:var(--color-headings);
+body {
+  margin:0;
+  background-color: var(--body-bg-color);
+  font-family: var(--font-family);
+  color: var(--color-font);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1em;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 
-/* ... */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+
+/*imitatie book cover*/
+main > section {
+  background-color: rgb(25 58 42);
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+  box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
+}
+
+
+img {
+  max-width: 30em;
+}
+
+
+h1 {
+  color: var(--color-headings);
+  font-family: var(--font-family);
+}
+
+p {
+  font-size: 0.85em;
+}
+
+ol {
+	position:relative;
+	
+	width:100vmin;
+	aspect-ratio:8/6;
+	background-color:rgb(255, 245, 239);
+	
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	perspective:100vmin;
+	transform-style:preserve-3d;
+
+  /*cover img*/
+  background-image: url(/images/cover-green.png);
+  background-size: contain;
+
+
+}
+
+
+li {
+	position:absolute;
+	width:50%;
+	height:100%;
+	
+	top:0;
+	right:0;
+
+	transform-origin:left;
+	transition:1s;
+
+  transform-style: preserve-3d;
+
+}
+
+li > section {
+  position: absolute;
+  inset:0;
+  backface-visibility: hidden;
+  /* transform-style: preserve-3d; */
+  /* pointer-events: none; */
+  overflow: hidden;
+
+  background-color: rgb(255 245 232);
+  background-image: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
+  padding: 2.5em;
+
+  
+}
+
+li > section:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+  transition: clip-path .3s;
+}
+
+li > section:nth-of-type(1):hover {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vmin), calc(100% - 5vmin) 100%, 0 100%, 0 0);
+}
+
+li > section:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  right:0;
+  bottom:0;
+  width:5vmin;
+  height: 5vmin;
+  background-color: black;
+  scale:0;
+  transform-origin: right bottom;
+
+  transition: scale .3s;
+} 
+
+li > section:nth-of-type(1):hover::after {
+  scale:1;
+}
+
+
+
+
+li > section:nth-of-type(2) {
+  transform: rotateY(.5turn);
+  background-image: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
+}
+
+
+
+
+/********************/
+/* DETAILS */
+/********************/
+
+
+/*Header*/
+header h1 {
+  font-size: 2.5em;
+  
+}
+
+
+header p:nth-of-type(1) {
+  font-size: 1.2em;
+  color: rgb(205, 48, 0);
+
+}
+header p:nth-of-type(2) {
+  font-weight: bold;
+  color: rgb(46 46 46);
+
+}
+
+li>img:nth-of-type(1) {
+  width: 100%;
+}
+
+
+/*List*/
+
+
+li:nth-of-type(1) {
+	transform:rotateY(-4deg);
+}
+li:nth-of-type(2) {
+	transform:rotateY(-3deg);
+}
+li:nth-of-type(3) {
+	transform:rotateY(-2deg);
+}
+li:nth-of-type(4) {
+	transform:rotateY(-1deg);
+}
+
+
+li:nth-of-type(1).omgeslagen {
+	transform:rotateY(-179deg);
+}
+li:nth-of-type(2).omgeslagen {
+	transform:rotateY(-178deg);
+}
+li:nth-of-type(3).omgeslagen {
+	transform:rotateY(-177deg);
+}
+li:nth-of-type(4).omgeslagen  {
+	transform:rotateY(-176deg);
+}
+
+/*bovenste Winnie-The-Pooh ding*/
+li p:nth-of-type(1) {
+  font-family: "Playfair Display SC", sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/*Alleen de eerste paragraaf met een initial letter*/
+li p:nth-of-type(2):first-letter {
+  font-size: 2em;
+}
+
+
+/*class voor decoratielijn boven elke pagina*/
+.decorativeline {
+  width: auto;
+  height: 0.1em;
+  background-color: rgb(30 59 0);
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+}
+
+.pd-realbear-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.5);
+}
 
