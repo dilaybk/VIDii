@@ -1,6 +1,7 @@
 // JavaScript Document
 console.log("Howdy!");
 
+//Pagina omslaan event listener
 var sections = document.querySelectorAll("li > section");
 
 sections.forEach(section => {

@@ -1,4 +1,4 @@
-
+/* DIT IS IN LOKALE FOLDER */
 
 /*************/
 /* CSS RESET */
@@ -22,8 +22,15 @@ button:not([disabled]) {
 :root {
   --color-headings:rgb(39 39 39);
   --color-font: black;
-  --font-family: "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --color-bg-ol: rgb(255 245 239);
   --body-bg-color: rgb(255 235 214);
+  --bg-color-main-section: rgb(25 58 42);
+  --page-color: rgb(255 245 232);
+  --page-turn-color: rgb(214, 189, 156);
+
+  --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
+  --font-family: "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
 
 }
 
@@ -39,38 +46,6 @@ body {
   color: var(--color-font);
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.1em;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-
-/*imitatie book cover*/
-main > section {
-  background-color: rgb(25 58 42);
-  padding: 0.5em;
-  border-radius: 0.5em;
-
-  box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
-}
-
-
-img {
-  max-width: 30em;
-}
-
-
 h1 {
   color: var(--color-headings);
   font-family: var(--font-family);
@@ -85,7 +60,7 @@ ol {
 	
 	width:100vmin;
 	aspect-ratio:8/6;
-	background-color:rgb(255, 245, 239);
+	background-color:var(--color-bg);
 	
 	margin:0;
 	padding:0;
@@ -97,50 +72,152 @@ ol {
   /*cover img*/
   background-image: url(/images/cover-green.png);
   background-size: contain;
+}
 
+img {
+  max-width: 30em;
+}
+
+
+/********************/
+/* HEADER */
+/********************/
+header {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p:nth-of-type(1) {
+  font-size: 1.2em;
+  color: rgb(205 48 0);
+}
+
+header p:nth-of-type(2) {
+  font-weight: bold;
+  color: rgb(46 46 46);
 
 }
 
 
-li {
-	position:absolute;
-	width:50%;
-	height:100%;
-	
-	top:0;
-	right:0;
+/********************/
+/* MAIN */
+/********************/
 
-	transform-origin:left;
-	transition:1s;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/*imitatie book cover*/
+main > section {
+  background-color: var(--bg-color-main-section);
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+  box-shadow: 0em 0.9em 3em var(--box-shadow);
+}
+
+
+/********************/
+/* LISTS */
+/********************/
+
+/* algemene list styling */
+li {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	
+	top: 0;
+	right: 0;
+
+	transform-origin: left;
+	transition: 1s;
 
   transform-style: preserve-3d;
-
 }
 
+/* styling binnen de section */
 li > section {
   position: absolute;
   inset:0;
+  
+  /* andere kant van de pagina verbergen */
   backface-visibility: hidden;
   /* transform-style: preserve-3d; */
   /* pointer-events: none; */
   overflow: hidden;
 
-  background-color: rgb(255 245 232);
+  background-color: var(--page-color);
+
+  /* pagina schaduw binnenkant */
   background-image: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   padding: 2.5em;
-
-  
 }
 
+/* "A brief history" */
+li > section h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Naam */
+li > section h2 {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Metadata */
+li > section:nth-of-type(1) p:nth-of-type(2) {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* Metadata eerste letter normaal formaat maken */
+li > section:nth-of-type(1) p:nth-of-type(2)::first-letter {
+  font-size: 1em;
+
+}
+
+
+
+/* Voor hoekje */
 li > section:nth-of-type(1) {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
   transition: clip-path .3s;
 }
+/* Tweede pagina hoekje */
+li > section:nth-of-type(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  transition: clip-path .3s;
+}
 
+
+
+
+/* Hoekje hover */
 li > section:nth-of-type(1):hover {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vmin), calc(100% - 5vmin) 100%, 0 100%, 0 0);
 }
+/*Hoekje hover: Tweede pagina BUT HOW TO CALC?!?!? its 100vmin in total so 50% is half page!*/
+li > section:nth-of-type(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 45vmin) 100%, 0 calc(100% - 5vmin))
+}
 
+
+
+/* Hoekje kleur nadat je hovert */
 li > section:nth-of-type(1)::after {
   content: "";
   position: absolute;
@@ -148,59 +225,58 @@ li > section:nth-of-type(1)::after {
   bottom:0;
   width:5vmin;
   height: 5vmin;
-  background-color: black;
+  background-color: var(--page-turn-color);
   scale:0;
   transform-origin: right bottom;
 
   transition: scale .3s;
 } 
 
+/* Hoekje kleur nadat je hovert + aan de linkerkant */
+li > section:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:5vmin;
+  height: 5vmin;
+  background-color: var(--page-turn-color);
+  scale:0;
+  transform-origin: left bottom;
+
+  transition: scale .3s;
+} 
+
+
+
+/* Hoekje gegroeit -> dus het 'vierkantje' */
 li > section:nth-of-type(1):hover::after {
+  scale:1;
+}
+/* Hoekje gegroeit -> dus het 'vierkantje' aan de linkerkant: Tweede pagina*/
+li > section:nth-of-type(2):hover::after {
   scale:1;
 }
 
 
-
-
+/* Pagina omslaan -> Ook dat het aan de andere kant is + schaduwen aan de goede kant */
 li > section:nth-of-type(2) {
+  transform: rotateY(.5turn);
+  background-image: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
+}
+li > section:nth-of-type(3) {
   transform: rotateY(.5turn);
   background-image: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 }
 
 
-
-
-/********************/
-/* DETAILS */
-/********************/
-
-
-/*Header*/
-header h1 {
-  font-size: 2.5em;
-  
-}
-
-
-header p:nth-of-type(1) {
-  font-size: 1.2em;
-  color: rgb(205, 48, 0);
-
-}
-header p:nth-of-type(2) {
-  font-weight: bold;
-  color: rgb(46 46 46);
-
-}
-
-li>img:nth-of-type(1) {
+/* images blijven 100% binnen lijst */
+li > img:nth-of-type(1) {
   width: 100%;
 }
 
 
-/*List*/
-
-
+/*Selection voor de verschillende pagina's*/
 li:nth-of-type(1) {
 	transform:rotateY(-4deg);
 }
@@ -214,7 +290,7 @@ li:nth-of-type(4) {
 	transform:rotateY(-1deg);
 }
 
-
+/* Selection voor pagina's. Wanneer je erop klikt -> omslaan */
 li:nth-of-type(1).omgeslagen {
 	transform:rotateY(-179deg);
 }
@@ -228,8 +304,12 @@ li:nth-of-type(4).omgeslagen  {
 	transform:rotateY(-176deg);
 }
 
+
+/*Li details op elke pagina*/
+/***************************/
+
 /*bovenste Winnie-The-Pooh ding*/
-li p:nth-of-type(1) {
+li > section > p:nth-of-type(1) {
   font-family: "Playfair Display SC", sans-serif;
   font-size: 0.8em;
   text-align: center;
@@ -241,6 +321,13 @@ li p:nth-of-type(1) {
 li p:nth-of-type(2):first-letter {
   font-size: 2em;
 }
+
+
+
+
+/********************/
+/* DETAILS */
+/********************/
 
 
 /*class voor decoratielijn boven elke pagina*/

@@ -36,6 +36,20 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   - Beter worden in animeren met CSS - heel misschien JS als ik het niet te moeilijk vind
   - Horizontaal scrollen heb ik nooit gedaan dus dat lijkt me leuk om uit te proberen
   - In het algemeen weer het coderen een beetje oppakken
+
+  ### To-Do List:
+  - Dark Mode
+  - Tekeningen per pagina
+  - Font-Face dingen doen
+  - Overlays
+  - Tekst klopt nog niet helemaal (nth-of-type checken)
+  - Laatste pagina 'the end'
+  - page flip sound
+  - progressie balk -> hoeveel pagina's nog
+  - toegankelijkheid (met knopjes door de pagina's)
+  - focus (visible), active toevoegen
+  - focus is met de muis en toetsenbord en focusvisible is alleen met het toetsenbord
+
  
 </details>
 
