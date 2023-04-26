@@ -232,7 +232,7 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url("/images/cover-green.png");
+  background-image: url("images/cover-green.png");
   background-size: contain;
 }
 
@@ -521,7 +521,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url("/images/hunny.png");
+  background-image: url("images/hunny.png");
   background-color: transparent;
   background-size: cover;
   padding: 1em;
