@@ -1,8 +1,9 @@
 @font-face {
-  font-family: baskerville;
+  font-family: "baskerville";
 
-  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
-  src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
+       url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+
   /* src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); Safari, Android, iOS */
 
   font-weight: normal;
@@ -11,13 +12,23 @@
 
 
 @font-face {
-  font-family: playfair-display;
+  font-family: "playfair-display";
 
-  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2");
-  src: url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
+       url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "domineregular";
+  src: url('/fonts/domine-variablefont_wght-webfont.woff2') format('woff2'),
+       url('/fonts/domine-variablefont_wght-webfont.woff') format('woff');
+    
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 
@@ -59,7 +70,7 @@ button:not([disabled]) {
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
   --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  --font-decorative: "playfair-display", serif;
+  --font-decorative: "playfair-display", "domineregular", serif;
 
   --white-space: min(5vw, 4rem);
 
@@ -79,7 +90,7 @@ button:not([disabled]) {
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
     --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-    --font-decorative: "playfair-display", serif;
+    --font-decorative: "playfair-display", "domineregular", serif;
 
   }
 
@@ -185,7 +196,7 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url(/images/cover-green.png);
+  background-image: url(./images/cover-green.png);
   background-size: contain;
 }
 
@@ -369,13 +380,14 @@ li > section:nth-of-type(3) {
 /*Li details op elke pagina*/
 /***************************/
 
-/*bovenste Winnie-The-Pooh ding*/
+
+/*Bovenste Winnie-The-Pooh ding*/
 li > section > p:nth-of-type(1) {
   font-family: var(--font-decorative);
   font-size: 0.8em;
-  text-align: center;
   font-weight: bold;
-
+  text-transform: capitalize;
+  text-align: center;
 }
 
 /*Alleen de eerste paragraaf met een initial letter*/
