@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: playfair display;
+  font-family: playfair-display;
   /* src: url('playfairdisplaysc-black-webfont.woff2') format('woff2');
   src: url('playfairdisplaysc-black-webfont.woff') format('woff');
   src: url('playfairdisplaysc-blackitalic-webfont.woff2') format('woff2');
@@ -70,9 +70,9 @@ button:not([disabled]) {
   --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
-  --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  --font-decorative: "playfair display"
 
+  --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --font-decorative: "playfair-display"
 
   --white-space: min(5vw, 4rem);
 
@@ -86,10 +86,11 @@ button:not([disabled]) {
   :root {
     --body-bg-color: rgb(24, 24, 31);
     --page-color: rgb(63, 85, 59);
-    --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
-    --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
     --color-font: white;
     --color-headings:rgb(179, 194, 176);
+    --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
+    --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
+
     --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 
   }
@@ -481,7 +482,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url(/images/hunny.png);
+  background-image: url(images/hunny.png);
   background-color: transparent;
   background-size: cover;
   padding: 1em;
