@@ -38,9 +38,9 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   - In het algemeen weer het coderen een beetje oppakken
 
   ### To-Do List:
-  - Dark Mode
+  - ~~Dark Mode~~
   - Tekeningen per pagina
-  - Font-Face dingen doen
+  - ~~Font-Face dingen doen~~
   - Overlays
   - Tekst klopt nog niet helemaal (nth-of-type checken)
   - Laatste pagina 'the end'
@@ -184,8 +184,9 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Honey pot img: https://www.pngaaa.com/detail/2767366
+2. Dark mode afbeeldingen https://moduscreate.com/blog/dark-mode-images/
+3. Dark mode afbeeldingen 2 https://larsmagnus.co/blog/how-to-make-images-react-to-light-and-dark-mode
+4. 
 
 </details>

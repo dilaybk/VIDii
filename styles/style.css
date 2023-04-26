@@ -1,3 +1,39 @@
+@font-face {
+  font-family: baskerville;
+  /* src: url("/fonts/librebaskerville-italic-webfont.woff") format(".woff");
+  src: url("/fonts/librebaskerville-italic-webfont.woff2") format(".woff2"); */
+  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
+  src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  /* src: url("/fonts/LibreBaskerville-Italic.ttf") format("truetype"); */
+}
+
+@font-face {
+  font-family: baskerville-bold;
+  src: url("/fonts/librebaskerville-bold-webfont.woff") format(".woff");
+  src: url("/fonts/librebaskerville-bold-webfont.woff2") format(".woff2");
+
+  src: url("/fonts/LibreBaskerville-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: playfair display;
+  /* src: url('playfairdisplaysc-black-webfont.woff2') format('woff2');
+  src: url('playfairdisplaysc-black-webfont.woff') format('woff');
+  src: url('playfairdisplaysc-blackitalic-webfont.woff2') format('woff2');
+  src: url('playfairdisplaysc-blackitalic-webfont.woff') format('woff');
+  src: url('playfairdisplaysc-bold-webfont.woff2') format('woff2');
+  src: url('playfairdisplaysc-bold-webfont.woff') format('woff');
+  src: url('playfairdisplaysc-bolditalic-webfont.woff2') format('woff2');
+  src: url('playfairdisplaysc-bolditalic-webfont.woff') format('woff');
+  src: url('playfairdisplaysc-italic-webfont.woff2') format('woff2');
+  src: url('playfairdisplaysc-italic-webfont.woff') format('woff'); */
+  src: url("playfairdisplaysc-regular-webfont.woff2") format("woff2");
+  src: url("playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("PlayfairDisplaySC-Regular.ttf") format("truetype");
+}
+
+
 /* DIT IS IN LOKALE FOLDER */
 
 /*************/
@@ -19,6 +55,9 @@ button:not([disabled]) {
 /* CUSTOM PROPERTIES */
 /*********************/
 
+
+/*Light Mode*/
+
 :root {
   --color-headings:rgb(39 39 39);
   --color-font: black;
@@ -29,8 +68,31 @@ button:not([disabled]) {
   --page-turn-color: rgb(214, 189, 156);
 
   --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
-  --font-family: "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
+  --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
+  --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --font-decorative: "playfair display"
 
+
+  --white-space: min(5vw, 4rem);
+
+
+}
+
+
+/*DARK MODE*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: rgb(24, 24, 31);
+    --page-color: rgb(63, 85, 59);
+    --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
+    --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
+    --color-font: white;
+    --color-headings:rgb(179, 194, 176);
+    --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+  }
 
 }
 
@@ -53,35 +115,21 @@ h1 {
 
 p {
   font-size: 0.85em;
+  white-space: pre-line;
+  line-height: 1.4em;
 }
 
-ol {
-	position:relative;
-	
-	width:100vmin;
-	aspect-ratio:8/6;
-	background-color:var(--color-bg);
-	
-	margin:0;
-	padding:0;
-	list-style:none;
-	
-	perspective:100vmin;
-	transform-style:preserve-3d;
-
-  /*cover img*/
-  background-image: url(/images/cover-green.png);
-  background-size: contain;
+button {
+  border: none;
+  padding: none;
 }
 
-img {
-  max-width: 30em;
-}
 
 
 /********************/
 /* HEADER */
 /********************/
+
 header {
   display: flex;
   flex-direction: column;
@@ -132,6 +180,25 @@ main > section {
 /* LISTS */
 /********************/
 
+ol {
+	position:relative;
+	
+	width:100vmin;
+	aspect-ratio:8/6;
+	background-color:var(--color-bg);
+	
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	perspective:100vmin;
+	transform-style:preserve-3d;
+
+  /*cover img*/
+  background-image: url(/images/cover-green.png);
+  background-size: contain;
+}
+
 /* algemene list styling */
 li {
 	position: absolute;
@@ -147,132 +214,9 @@ li {
   transform-style: preserve-3d;
 }
 
-/* styling binnen de section */
-li > section {
-  position: absolute;
-  inset:0;
-  
-  /* andere kant van de pagina verbergen */
-  backface-visibility: hidden;
-  /* transform-style: preserve-3d; */
-  /* pointer-events: none; */
-  overflow: hidden;
-
-  background-color: var(--page-color);
-
-  /* pagina schaduw binnenkant */
-  background-image: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
-  padding: 2.5em;
-}
-
-/* "A brief history" */
-li > section h1 {
-  font-size: 2.5em;
-  text-align: center;
-  margin-top: 2em;
-}
-
-/* Naam */
-li > section h2 {
-  font-size: 1em;
-  text-align: center;
-}
-
-/* Metadata */
-li > section:nth-of-type(1) p:nth-of-type(2) {
-  margin-top: 2em;
-  text-align: center;
-}
-
-/* Metadata eerste letter normaal formaat maken */
-li > section:nth-of-type(1) p:nth-of-type(2)::first-letter {
-  font-size: 1em;
-
-}
-
-
-
-/* Voor hoekje */
-li > section:nth-of-type(1) {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
-  transition: clip-path .3s;
-}
-/* Tweede pagina hoekje */
-li > section:nth-of-type(2) {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
-  transition: clip-path .3s;
-}
-
-
-
-
-/* Hoekje hover */
-li > section:nth-of-type(1):hover {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vmin), calc(100% - 5vmin) 100%, 0 100%, 0 0);
-}
-/*Hoekje hover: Tweede pagina BUT HOW TO CALC?!?!? its 100vmin in total so 50% is half page!*/
-li > section:nth-of-type(2):hover {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 45vmin) 100%, 0 calc(100% - 5vmin))
-}
-
-
-
-/* Hoekje kleur nadat je hovert */
-li > section:nth-of-type(1)::after {
-  content: "";
-  position: absolute;
-  right:0;
-  bottom:0;
-  width:5vmin;
-  height: 5vmin;
-  background-color: var(--page-turn-color);
-  scale:0;
-  transform-origin: right bottom;
-
-  transition: scale .3s;
-} 
-
-/* Hoekje kleur nadat je hovert + aan de linkerkant */
-li > section:nth-of-type(2)::after {
-  content: "";
-  position: absolute;
-  left:0;
-  bottom:0;
-  width:5vmin;
-  height: 5vmin;
-  background-color: var(--page-turn-color);
-  scale:0;
-  transform-origin: left bottom;
-
-  transition: scale .3s;
-} 
-
-
-
-/* Hoekje gegroeit -> dus het 'vierkantje' */
-li > section:nth-of-type(1):hover::after {
-  scale:1;
-}
-/* Hoekje gegroeit -> dus het 'vierkantje' aan de linkerkant: Tweede pagina*/
-li > section:nth-of-type(2):hover::after {
-  scale:1;
-}
-
-
-/* Pagina omslaan -> Ook dat het aan de andere kant is + schaduwen aan de goede kant */
-li > section:nth-of-type(2) {
-  transform: rotateY(.5turn);
-  background-image: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
-}
-li > section:nth-of-type(3) {
-  transform: rotateY(.5turn);
-  background-image: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
-}
-
-
 /* images blijven 100% binnen lijst */
-li > img:nth-of-type(1) {
-  width: 100%;
+li img {
+  max-width: 100%;
 }
 
 
@@ -305,6 +249,133 @@ li:nth-of-type(4).omgeslagen  {
 }
 
 
+
+
+/*******************/
+/* LIST > SECTIONS */
+/*******************/
+
+
+/* styling binnen de section */
+li > section {
+  position: absolute;
+  inset:0;
+  
+  /* andere kant van de pagina verbergen */
+  backface-visibility: hidden;
+  /* transform-style: preserve-3d; */
+  /* pointer-events: none; */
+  overflow: hidden;
+
+  background-color: var(--page-color);
+
+  /* pagina schaduw binnenkant */
+  background-image: var(--page-shadow-right);
+  padding: 2.5em;
+}
+
+
+/* "A brief history" */
+li > section h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Naam Pagina 1*/
+li > section h2 {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Metadata Pagina 1 */
+li:nth-of-type(1) > section:nth-of-type(1) p:nth-of-type(2) {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* Metadata eerste letter normaal formaat maken */
+li > section:nth-of-type(1) p:nth-of-type(2)::first-letter {
+  font-size: 1em;
+
+}
+
+
+/* Voor hoekje */
+li > section:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+  transition: clip-path .3s;
+}
+/* Tweede pagina hoekje */
+li > section:nth-of-type(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  transition: clip-path .3s;
+}
+
+
+/* Hoekje hover */
+li > section:nth-of-type(1):hover {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vmin), calc(100% - 5vmin) 100%, 0 100%, 0 0);
+}
+/*Hoekje hover: Tweede pagina BUT HOW TO CALC?!?!? its 100vmin in total so 50% is half page!*/
+li > section:nth-of-type(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 45vmin) 100%, 0 calc(100% - 5vmin))
+}
+
+
+/* Hoekje kleur nadat je hovert */
+li > section:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  right:0;
+  bottom:0;
+  width:5vmin;
+  height: 5vmin;
+  background-color: var(--page-turn-color);
+  scale:0;
+  transform-origin: right bottom;
+
+  transition: scale .3s;
+} 
+
+/* Hoekje kleur nadat je hovert + aan de linkerkant */
+li > section:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:5vmin;
+  height: 5vmin;
+  background-color: var(--page-turn-color);
+  scale:0;
+  transform-origin: left bottom;
+
+  transition: scale .3s;
+} 
+
+/* Hoekje gegroeit -> dus het 'vierkantje' */
+li > section:nth-of-type(1):hover::after {
+  scale:1;
+}
+
+/* Hoekje gegroeit -> dus het 'vierkantje' aan de linkerkant: Tweede pagina*/
+li > section:nth-of-type(2):hover::after {
+  scale:1;
+}
+
+/* Pagina omslaan -> Ook dat het aan de andere kant is + schaduwen aan de goede kant */
+li > section:nth-of-type(2) {
+  transform: rotateY(.5turn);
+  background-image: var(--page-shadow-left);
+}
+li > section:nth-of-type(3) {
+  transform: rotateY(.5turn);
+  background-image: var(--page-shadow-left);
+}
+
+
+
+
 /*Li details op elke pagina*/
 /***************************/
 
@@ -325,9 +396,75 @@ li p:nth-of-type(2):first-letter {
 
 
 
-/********************/
+
+
+/***********/
+/* DIALOGS */
+/***********/
+
+
+
+/* the box */
+dialog {
+  position: relative;
+	width:calc( 100vw - var(--white-space) );
+	height:calc( 100vh - var(--white-space) );
+	padding:0;
+	
+	border:none;
+	box-shadow:var(--box-shadow);
+
+  z-index: 10;
+}
+
+dialog p {
+  position: absolute;
+  bottom: 0;
+  margin: 1em 1em 1em 1em;
+
+  font-family: var(--font-family);
+  font-size: 1.1em;
+}
+
+dialog img {
+  max-width: 20em;
+}
+
+dialog button {
+	position:absolute;
+	right:.5em;
+	top:.5em;
+	z-index:200;
+	
+	width:1.5em;
+	aspect-ratio:1/1;
+	
+	appearance:none;
+	background:none;
+	/* border:var(--dialog-button-border); */
+	
+	font-size:2em;
+	font-weight:bold;
+	/* color:var(--dialog-button-clr); */
+}
+
+/* page does not scroll if dialog is shown */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/********************************/
 /* DETAILS */
-/********************/
+/* classes, id's andere extra's */
+/********************************/
+
 
 
 /*class voor decoratielijn boven elke pagina*/
@@ -337,6 +474,25 @@ li p:nth-of-type(2):first-letter {
   background-color: rgb(30 59 0);
   margin-top: -0.2em;
   margin-bottom: -0.2em;
+}
+
+/* Button honingpot intro pagina*/
+.hunny {
+  position: absolute;
+  right: 4em;
+  bottom: 2em;
+  background-image: url(/images/hunny.png);
+  background-color: transparent;
+  background-size: cover;
+  padding: 1em;
+  width: 4.9em;
+  height: 5.5em;
+  transition: .3s;
+}
+
+.hunny:hover {
+  transform: rotate(10deg);
+  cursor: pointer;
 }
 
 .pd-realbear-overlay {
