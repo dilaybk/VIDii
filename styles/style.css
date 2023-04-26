@@ -4,6 +4,9 @@
   src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
   src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
   src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); /* Safari, Android, iOS */
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -12,6 +15,9 @@
 
   src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2");
   src: url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 
