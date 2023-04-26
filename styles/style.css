@@ -3,7 +3,7 @@
 
   src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
   src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
-  src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  /* src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); Safari, Android, iOS */
 
   font-weight: normal;
   font-style: normal;
@@ -471,7 +471,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url(/images/hunny.png);
+  background-image: url(./images/hunny.png);
   background-color: transparent;
   background-size: cover;
   padding: 1em;
