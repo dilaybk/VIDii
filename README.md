@@ -187,6 +187,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 1. Honey pot img: https://www.pngaaa.com/detail/2767366
 2. Dark mode afbeeldingen https://moduscreate.com/blog/dark-mode-images/
 3. Dark mode afbeeldingen 2 https://larsmagnus.co/blog/how-to-make-images-react-to-light-and-dark-mode
-4. 
+4. img echte winnie https://www.wbur.org/hereandnow/2015/11/04/true-story-of-pooh
+5. img robin en winnie the pooh bear https://www.smithsonianmag.com/arts-culture/winnie-pooh-became-household-bear-180967090/
+6. 
 
 </details>

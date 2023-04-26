@@ -14,9 +14,9 @@
   font-family: "baskerville-bold";
   src: url("/fonts/librebaskerville-bold-webfont.woff2") format("woff2"),
        url("/fonts/domine-variablefont_wght-webfont.woff") format("woff");
+
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -80,18 +80,20 @@ button:not([disabled]) {
 
 :root {
   --color-headings:rgb(39 39 39);
-  --color-font: black;
+  --color-font: rgb(49 39 30);
   --color-bg-ol: rgb(255 245 239);
   --body-bg-color: rgb(255 235 214);
   --bg-color-main-section: rgb(25 58 42);
   --page-color: rgb(255 245 232);
-  --page-turn-color: rgb(214, 189, 156);
+  --page-turn-color: rgb(214 189 156);
+  --dialog-color: rgb(255 249 237);
+  --dialog-txt-clr: rgb(78, 34, 17);
 
   --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
-  --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
+  --font-family: , "baskerville", "noto-serif", "Times New Roman", serif;
   --font-decorative: "playfair-display", "domineregular", serif;
 
   --white-space: min(5vw, 4rem);
@@ -111,7 +113,7 @@ button:not([disabled]) {
     --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
-    --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
+    --font-family: , "baskerville", "noto-serif", "Times New Roman", serif;
     --font-decorative: "playfair-display", "domineregular", serif;
 
   }
@@ -286,6 +288,8 @@ li:nth-of-type(4).omgeslagen  {
 
 
 
+
+
 /*******************/
 /* LIST > SECTIONS */
 /*******************/
@@ -442,7 +446,8 @@ li p:nth-of-type(2):first-letter {
 
 /* the box */
 dialog {
-  position: relative;
+  background-color: var(--dialog-color);
+
 	width:calc( 100vw - var(--white-space) );
 	height:calc( 100vh - var(--white-space) );
 	padding:0;
@@ -454,12 +459,11 @@ dialog {
 }
 
 dialog p {
-  position: absolute;
-  bottom: 0;
+  color: var(--dialog-txt-clr);
   margin: 1em 1em 1em 1em;
 
   font-family: var(--font-family);
-  font-size: 1.1em;
+  font-size: 1.01em;
 }
 
 dialog img {
