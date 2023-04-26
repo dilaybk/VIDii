@@ -2,19 +2,20 @@
   font-family: baskerville;
   /* src: url("/fonts/librebaskerville-italic-webfont.woff") format(".woff");
   src: url("/fonts/librebaskerville-italic-webfont.woff2") format(".woff2"); */
-  src: url("../fonts/librebaskerville-regular-webfont.woff") format(".woff");
-  src: url("../fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
-  src: url("../fonts/libreBaskerville-regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
+  src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); /* Safari, Android, iOS */
   /* src: url("/fonts/LibreBaskerville-Italic.ttf") format("truetype"); */
 }
-
+/* 
 @font-face {
   font-family: baskerville-bold;
   src: url("../fonts/librebaskerville-bold-webfont.woff") format(".woff");
   src: url("../fonts/librebaskerville-bold-webfont.woff2") format(".woff2");
 
-  src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
-}
+  src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"); 
+} /* Safari, Android, iOS */
+
 
 @font-face {
   font-family: playfair-display;
@@ -28,9 +29,9 @@
   src: url('playfairdisplaysc-bolditalic-webfont.woff') format('woff');
   src: url('playfairdisplaysc-italic-webfont.woff2') format('woff2');
   src: url('playfairdisplaysc-italic-webfont.woff') format('woff'); */
-  src: url("../fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2");
-  src: url("../fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
-  src: url("../fonts/playfairdisplaysc-regular.ttf") format("truetype");
+  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2");
+  src: url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("/fonts/playfairdisplaysc-regular.ttf") format("truetype");
 }
 
 
@@ -72,7 +73,7 @@ button:not([disabled]) {
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
   --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  --font-decorative: "playfair-display"
+  --font-decorative: "playfair-display", serif;
 
   --white-space: min(5vw, 4rem);
 
@@ -196,7 +197,7 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url(../images/cover-green.png);
+  background-image: url(/images/cover-green.png);
   background-size: contain;
 }
 
@@ -382,7 +383,7 @@ li > section:nth-of-type(3) {
 
 /*bovenste Winnie-The-Pooh ding*/
 li > section > p:nth-of-type(1) {
-  font-family: "Playfair Display SC", sans-serif;
+  font-family: var(--font-decorative);
   font-size: 0.8em;
   text-align: center;
   font-weight: bold;
@@ -482,7 +483,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url(../images/hunny.png);
+  background-image: url(/images/hunny.png);
   background-color: transparent;
   background-size: cover;
   padding: 1em;
