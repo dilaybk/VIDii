@@ -1,8 +1,8 @@
 @font-face {
   font-family: "baskerville";
 
-  src: url("./fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
-       url("./fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
+       url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
 
   /* src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); Safari, Android, iOS */
 
@@ -10,12 +10,29 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "baskerville-bold";
+  src: url("/fonts/librebaskerville-bold-webfont.woff2") format("woff2"),
+       url("/fonts/domine-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "noto-serif";
+  src: url("/fonts/notoserif-regular-webfont.woff2") format("woff2"),
+       url("/fonts/notoserif-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 @font-face {
   font-family: "playfair-display";
 
-  src: url("./fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
-       url("./fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
+       url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -23,13 +40,15 @@
 
 @font-face {
   font-family: "domineregular";
-  src: url("./fonts/domine-variablefont_wght-webfont.woff2") format("woff2"),
-       url("./fonts/domine-variablefont_wght-webfont.woff") format("woff");
+  src: url("/fonts/domine-variablefont_wght-webfont.woff2") format("woff2"),
+       url("/fonts/domine-variablefont_wght-webfont.woff") format("woff");
     
   font-weight: normal;
   font-style: normal;
 
 }
+
+
 
 
 /* DIT IS IN LOKALE FOLDER */
@@ -49,12 +68,15 @@ button:not([disabled]) {
 
 
 
+
+
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 
-/*Light Mode*/
+/*LIGHT MODE*/
 
 :root {
   --color-headings:rgb(39 39 39);
@@ -69,7 +91,7 @@ button:not([disabled]) {
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
-  --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
   --font-decorative: "playfair-display", "domineregular", serif;
 
   --white-space: min(5vw, 4rem);
@@ -89,7 +111,7 @@ button:not([disabled]) {
     --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
-    --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
     --font-decorative: "playfair-display", "domineregular", serif;
 
   }
@@ -97,20 +119,25 @@ button:not([disabled]) {
 }
 
 
+
+
+
+
 /********************/
 /* ALGEMENE STYLING */
 /********************/
 
 body {
-  margin:0;
-  background-color: var(--body-bg-color);
   font-family: var(--font-family);
+  background-color: var(--body-bg-color);
   color: var(--color-font);
+  margin:0;
 }
 
 h1 {
-  color: var(--color-headings);
   font-family: var(--font-family);
+  color: var(--color-headings);
+
 }
 
 p {
@@ -124,6 +151,8 @@ button {
   border: none;
   padding: none;
 }
+
+
 
 
 
@@ -155,6 +184,9 @@ header p:nth-of-type(2) {
 }
 
 
+
+
+
 /********************/
 /* MAIN */
 /********************/
@@ -177,6 +209,8 @@ main > section {
 }
 
 
+
+
 /********************/
 /* LISTS */
 /********************/
@@ -196,7 +230,7 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url(./images/cover-green.png);
+  background-image: url("/images/cover-green.png");
   background-size: contain;
 }
 
@@ -483,7 +517,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url(./images/hunny.png);
+  background-image: url("/images/hunny.png");
   background-color: transparent;
   background-size: cover;
   padding: 1em;
