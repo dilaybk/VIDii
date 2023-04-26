@@ -103,6 +103,7 @@ h1 {
 }
 
 p {
+  font-family: var(--font-family);
   font-size: 0.85em;
   white-space: pre-line;
   line-height: 1.4em;
