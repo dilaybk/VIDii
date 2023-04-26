@@ -93,7 +93,7 @@ button:not([disabled]) {
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
-  --font-family: , "baskerville", "noto-serif", "Times New Roman", serif;
+  --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
   --font-decorative: "playfair-display", "domineregular", serif;
 
   --white-space: min(5vw, 4rem);
@@ -113,7 +113,7 @@ button:not([disabled]) {
     --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
-    --font-family: , "baskerville", "noto-serif", "Times New Roman", serif;
+    --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
     --font-decorative: "playfair-display", "domineregular", serif;
 
   }
@@ -232,7 +232,7 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url("images/cover-green.png");
+  background-image: url("/images/cover-green.png");
   background-size: contain;
 }
 
@@ -521,7 +521,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url("images/hunny.png");
+  background-image: url("/images/hunny.png");
   background-color: transparent;
   background-size: cover;
   padding: 1em;
