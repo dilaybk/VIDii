@@ -1,37 +1,17 @@
 @font-face {
   font-family: baskerville;
-  /* src: url("/fonts/librebaskerville-italic-webfont.woff") format(".woff");
-  src: url("/fonts/librebaskerville-italic-webfont.woff2") format(".woff2"); */
+
   src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff");
   src: url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
   src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); /* Safari, Android, iOS */
-  /* src: url("/fonts/LibreBaskerville-Italic.ttf") format("truetype"); */
 }
-/* 
-@font-face {
-  font-family: baskerville-bold;
-  src: url("../fonts/librebaskerville-bold-webfont.woff") format(".woff");
-  src: url("../fonts/librebaskerville-bold-webfont.woff2") format(".woff2");
-
-  src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"); 
-} /* Safari, Android, iOS */
 
 
 @font-face {
   font-family: playfair-display;
-  /* src: url('playfairdisplaysc-black-webfont.woff2') format('woff2');
-  src: url('playfairdisplaysc-black-webfont.woff') format('woff');
-  src: url('playfairdisplaysc-blackitalic-webfont.woff2') format('woff2');
-  src: url('playfairdisplaysc-blackitalic-webfont.woff') format('woff');
-  src: url('playfairdisplaysc-bold-webfont.woff2') format('woff2');
-  src: url('playfairdisplaysc-bold-webfont.woff') format('woff');
-  src: url('playfairdisplaysc-bolditalic-webfont.woff2') format('woff2');
-  src: url('playfairdisplaysc-bolditalic-webfont.woff') format('woff');
-  src: url('playfairdisplaysc-italic-webfont.woff2') format('woff2');
-  src: url('playfairdisplaysc-italic-webfont.woff') format('woff'); */
+
   src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2");
   src: url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
-  src: url("/fonts/playfairdisplaysc-regular.ttf") format("truetype");
 }
 
 
@@ -93,6 +73,7 @@ button:not([disabled]) {
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
     --font-family: "baskerville", "Libre Baskerville", "Baskerville PT", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    --font-decorative: "playfair-display", serif;
 
   }
 
