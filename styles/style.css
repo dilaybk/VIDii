@@ -1,8 +1,8 @@
 @font-face {
   font-family: "baskerville";
 
-  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
-       url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("./fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
+       url("./fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
 
   /* src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); Safari, Android, iOS */
 
@@ -14,8 +14,8 @@
 @font-face {
   font-family: "playfair-display";
 
-  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
-       url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("./fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
+       url("./fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -23,8 +23,8 @@
 
 @font-face {
   font-family: "domineregular";
-  src: url('/fonts/domine-variablefont_wght-webfont.woff2') format('woff2'),
-       url('/fonts/domine-variablefont_wght-webfont.woff') format('woff');
+  src: url("./fonts/domine-variablefont_wght-webfont.woff2") format("woff2"),
+       url("./fonts/domine-variablefont_wght-webfont.woff") format("woff");
     
   font-weight: normal;
   font-style: normal;
