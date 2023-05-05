@@ -189,6 +189,11 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 3. Dark mode afbeeldingen 2 https://larsmagnus.co/blog/how-to-make-images-react-to-light-and-dark-mode
 4. img echte winnie https://www.wbur.org/hereandnow/2015/11/04/true-story-of-pooh
 5. img robin en winnie the pooh bear https://www.smithsonianmag.com/arts-culture/winnie-pooh-became-household-bear-180967090/
-6. 
+6. piglet img (traced) https://themediaameetingpoint.wordpress.com/2013/02/05/act-01-designing-cartoons/winnie/
+7. eeyore img (traced) https://disneyjuniorpedia.fandom.com/wiki/Eeyore
+8. kanga & roo img (traced) https://comicvine.gamespot.com/kanga/4005-34021/
+9. tigger img (traced) https://pooh.fandom.com/wiki/Tigger?file=Tigger_2011.png
+10. owl img (traced) https://characters.fandom.com/wiki/Owl_(Winnie_the_Pooh) & https://www.disneyclips.com/images2/owl.html
+11. rabbit img (traced) https://en.wikipedia.org/wiki/Rabbit_%28Winnie-the-Pooh%29
 
 </details>

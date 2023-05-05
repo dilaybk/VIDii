@@ -2,31 +2,77 @@
 console.log("Howdy!");
 
 
+// //Pagina omslaan event listener
+// var sections = document.querySelectorAll("li > section");
+
+
+// sections.forEach(section => {
+//   section.addEventListener("click", omslaan);
+// });
+
+// function omslaan(event) {
+//   //Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
+//   if (hunnyDialog.open) {
+//     return;
+//   }	
+//   var dePagina = event.target;
+//   var deLi = dePagina.closest("li");
+//   deLi.classList.toggle("omgeslagen");
+// }
 
 
 
-
-//Pagina omslaan event listener
+// //Pagina omslaan event listener
 var sections = document.querySelectorAll("li > section");
+// document.addEventListener("keydown", e => {
+// 	console.log(e);
+// });
 
 sections.forEach(section => {
-	section.addEventListener("click", omslaan);
+    section.addEventListener("click", omslaan);
 });
+
 
 function omslaan(event) {
 
-	//Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
+	// Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
 	if (hunnyDialog.open) {
-		return;
-	}	
+    	return;
+  	}	
 
+  // dePagina is waar 'the event' will take place
+  // deLi is een variabele waarbij het kijkt naar de dichtsbijzijnde list item binnen dePagina
 	var dePagina = event.target;
-	
+
 	var deLi = dePagina.closest("li");
-	
 
 	deLi.classList.toggle("omgeslagen");
-}
+};
+
+
+
+// document.addEventListener("keydown", omslaanKey);
+
+// function omslaanKey (event) {
+// 	var key = event.key;
+// 	if (key == "ArrowLeft") {
+
+// 		var dePagina = event.target;
+// 		var deLi = dePagina.querySelector("li");
+
+// 		deLi.classList.toggle("omgeslagen");
+
+
+// 	} else if (key == "ArrowRight") {
+		
+// 		var dePagina = event.target;
+// 		var deLi = dePagina.querySelector("li");
+
+// 		deLi.classList.toggle("omgeslagen");
+// 	}
+// };
+
+
 
 
 
@@ -69,20 +115,26 @@ dialogs.forEach(dialog => {
 
 
 
-//////////////////////
-// VERANDEREN AFB WANNEER SWITCH DARKMODE
-//////////////////////
 
+// //Pagina omslaan event listener
+// var sections = document.querySelectorAll("li > section");
 
-// const images = document.querySelectorAll('img');
+// sections.forEach(section => {
+// 	section.addEventListener("click", omslaan);
+	
+// });
 
-// //MatchMedia is om te checken welke mode (light/dark) je gebruikt
-// // && wordt gebruikt om een waarde te geven en te kijken of de browser 'match media' support
-// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+// function omslaan(event) {
 
-//   // als je in dark mode bent, verander de img src
-//   images.forEach((img) => {
-//     img.src = img.getAttribute('data-dark-src');
-//   });
+// 	//Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
+// 	if (hunnyDialog.open) {
+// 		return;
+// 	}	
 
+// 	var dePagina = event.target;
+	
+// 	var deLi = dePagina.closest("li");
+	
+
+// 	deLi.classList.toggle("omgeslagen");
 // }

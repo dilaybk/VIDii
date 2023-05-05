@@ -1,8 +1,8 @@
 @font-face {
   font-family: "baskerville";
 
-  src: url("/fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
-       url("/fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
+  src: url("../fonts/librebaskerville-regular-webfont.woff") format(".woff"), 
+       url("../fonts/librebaskerville-regular-webfont.woff2") format(".woff2");
 
   /* src: url("/fonts/libreBaskerville-regular.ttf") format("truetype"); Safari, Android, iOS */
 
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "baskerville-bold";
-  src: url("/fonts/librebaskerville-bold-webfont.woff2") format("woff2"),
-       url("/fonts/domine-variablefont_wght-webfont.woff") format("woff");
+  src: url("../fonts/librebaskerville-bold-webfont.woff2") format("woff2"),
+       url("../fonts/domine-variablefont_wght-webfont.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: "noto-serif";
-  src: url("/fonts/notoserif-regular-webfont.woff2") format("woff2"),
-       url("/fonts/notoserif-regular-webfont.woff") format("woff");
+  src: url("../fonts/notoserif-regular-webfont.woff2") format("woff2"),
+       url("../fonts/notoserif-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 
@@ -31,8 +31,8 @@
 @font-face {
   font-family: "playfair-display";
 
-  src: url("/fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
-       url("/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  src: url("../fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"), 
+       url("../fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
@@ -40,8 +40,8 @@
 
 @font-face {
   font-family: "domineregular";
-  src: url("/fonts/domine-variablefont_wght-webfont.woff2") format("woff2"),
-       url("/fonts/domine-variablefont_wght-webfont.woff") format("woff");
+  src: url("../fonts/domine-variablefont_wght-webfont.woff2") format("woff2"),
+       url("../fonts/domine-variablefont_wght-webfont.woff") format("woff");
     
   font-weight: normal;
   font-style: normal;
@@ -93,8 +93,8 @@ button:not([disabled]) {
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
   --page-shadow-left: linear-gradient(-90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
 
-  --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
-  --font-decorative: "playfair-display", "domineregular", serif;
+  --font-family: "baskerville-bold", "baskerville", "noto-serif", "American Typewriter", "Times New Roman", monospace, serif;
+  --font-decorative: "playfair-display", "domineregular", monospace, serif;
 
   --white-space: min(5vw, 4rem);
 
@@ -158,6 +158,8 @@ button {
 
 
 
+
+
 /********************/
 /* HEADER */
 /********************/
@@ -211,7 +213,23 @@ main > section {
 }
 
 
+@media (max-width:70em) {
+  main > section {
+    transform:scale(.75);
+  }
+}
 
+@media (max-width:60em) {
+  main > section {
+    transform:scale(.5);
+  }
+}
+
+@media (max-width:40em) {
+  main > section {
+    transform:scale(.25);
+  }
+}
 
 /********************/
 /* LISTS */
@@ -220,7 +238,7 @@ main > section {
 ol {
 	position:relative;
 	
-	width:100vmin;
+	width:60em;
 	aspect-ratio:8/6;
 	background-color:var(--color-bg);
 	
@@ -232,9 +250,11 @@ ol {
 	transform-style:preserve-3d;
 
   /*cover img*/
-  background-image: url("/images/cover-green.png");
+  background-image: url("../images/cover-green.png"); /*NEED TO CHANGE THIS FOR IN GITHUB*/
   background-size: contain;
 }
+
+
 
 /* algemene list styling */
 li {
@@ -259,30 +279,42 @@ li img {
 
 /*Selection voor de verschillende pagina's*/
 li:nth-of-type(1) {
-	transform:rotateY(-4deg);
+	transform:rotateY(-6deg);
 }
 li:nth-of-type(2) {
-	transform:rotateY(-3deg);
+	transform:rotateY(-5deg);
 }
 li:nth-of-type(3) {
-	transform:rotateY(-2deg);
+	transform:rotateY(-4deg);
 }
 li:nth-of-type(4) {
+	transform:rotateY(-3deg);
+}
+li:nth-of-type(5) {
+	transform:rotateY(-2deg);
+}
+li:nth-of-type(6) {
 	transform:rotateY(-1deg);
 }
 
 /* Selection voor pagina's. Wanneer je erop klikt -> omslaan */
 li:nth-of-type(1).omgeslagen {
-	transform:rotateY(-179deg);
+	transform:rotateY(-180deg);
 }
 li:nth-of-type(2).omgeslagen {
-	transform:rotateY(-178deg);
+	transform:rotateY(-179deg);
 }
 li:nth-of-type(3).omgeslagen {
-	transform:rotateY(-177deg);
+	transform:rotateY(-178deg);
 }
 li:nth-of-type(4).omgeslagen  {
+	transform:rotateY(-177deg);
+}
+li:nth-of-type(5).omgeslagen  {
 	transform:rotateY(-176deg);
+}
+li:nth-of-type(6).omgeslagen  {
+	transform:rotateY(-175deg);
 }
 
 
@@ -415,6 +447,7 @@ li > section:nth-of-type(3) {
 
 
 
+
 /*Li details op elke pagina*/
 /***************************/
 
@@ -450,7 +483,7 @@ dialog {
 
 	width:calc( 100vw - var(--white-space) );
 	height:calc( 100vh - var(--white-space) );
-	padding:0;
+	padding:3em;
 	
 	border:none;
 	box-shadow:var(--box-shadow);
@@ -463,11 +496,10 @@ dialog p {
   margin: 1em 1em 1em 1em;
 
   font-family: var(--font-family);
-  font-size: 1.01em;
 }
 
 dialog img {
-  max-width: 20em;
+  max-width: 18em;
 }
 
 dialog button {
@@ -521,7 +553,7 @@ html:has(dialog[open]) {
   position: absolute;
   right: 4em;
   bottom: 2em;
-  background-image: url("/images/hunny.png");
+  background-image: url("../images/hunny.png");
   background-color: transparent;
   background-size: cover;
   padding: 1em;
