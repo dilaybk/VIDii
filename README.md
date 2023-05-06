@@ -195,5 +195,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 9. tigger img (traced) https://pooh.fandom.com/wiki/Tigger?file=Tigger_2011.png
 10. owl img (traced) https://characters.fandom.com/wiki/Owl_(Winnie_the_Pooh) & https://www.disneyclips.com/images2/owl.html
 11. rabbit img (traced) https://en.wikipedia.org/wiki/Rabbit_%28Winnie-the-Pooh%29
+12. Ashdown forest img https://www.geograph.org.uk/photo/5842451
 
 </details>

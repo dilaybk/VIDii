@@ -77,9 +77,9 @@ function omslaan(event) {
 
 
 
-//////////////////////
+/////////////////////////////
 // OPEN/CLOSE DIALOG 1: HUNNY
-//////////////////////
+/////////////////////////////
 
 const hunnyBtn = document.querySelector("button:nth-of-type(1)");
 const hunnyDialog = document.querySelector("dialog:nth-of-type(1)");
@@ -92,6 +92,22 @@ function openDialog() {
 
 
 
+////////////////////////////
+// OPEN/CLOSE DIALOG 1: MAP
+///////////////////////////
+const mapImg = document.querySelector(".mapPic");
+const mapDialog = document.querySelector(".mapDialog");
+
+mapImg.addEventListener("click", openMapDialog);
+
+function openMapDialog() {
+	// Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
+	if (mapDialog.open) {
+		return;
+	}	
+
+	mapDialog.showModal();
+}
 
 
 //////////////////////////////////////////////

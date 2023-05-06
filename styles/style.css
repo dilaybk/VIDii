@@ -87,7 +87,7 @@ button:not([disabled]) {
   --page-color: rgb(255 245 232);
   --page-turn-color: rgb(214 189 156);
   --dialog-color: rgb(255 249 237);
-  --dialog-txt-clr: rgb(78, 34, 17);
+  --dialog-txt-clr: rgb(78 34 17);
 
   --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
@@ -106,10 +106,12 @@ button:not([disabled]) {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg-color: rgb(24, 24, 31);
-    --page-color: rgb(63, 85, 59);
+    --body-bg-color: rgb(24 24 31);
+    --page-color: rgb(63 85 59);
     --color-font: white;
-    --color-headings:rgb(179, 194, 176);
+    --color-headings:rgb(179 194 176);
+    --dialog-color: rgb(63 85 59);
+    --dialog-txt-clr: rgb(232 218 213);
     --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
@@ -152,6 +154,10 @@ p {
 button {
   border: none;
   padding: none;
+}
+
+img {
+  margin-top: .5em;
 }
 
 
@@ -213,6 +219,7 @@ main > section {
 }
 
 
+/*Meeschalen met bepaalde grootte*/
 @media (max-width:70em) {
   main > section {
     transform:scale(.75);
@@ -230,6 +237,10 @@ main > section {
     transform:scale(.25);
   }
 }
+
+
+
+
 
 /********************/
 /* LISTS */
@@ -388,9 +399,9 @@ li > section:nth-of-type(2) {
 li > section:nth-of-type(1):hover {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vmin), calc(100% - 5vmin) 100%, 0 100%, 0 0);
 }
-/*Hoekje hover: Tweede pagina BUT HOW TO CALC?!?!? its 100vmin in total so 50% is half page!*/
+/*Hoekje hover: Tweede pagina*/
 li > section:nth-of-type(2):hover {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 45vmin) 100%, 0 calc(100% - 5vmin))
+  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 50vmin) 100%, 0 calc(100% - 5vmin))
 }
 
 
@@ -513,11 +524,17 @@ dialog button {
 	
 	appearance:none;
 	background:none;
-	/* border:var(--dialog-button-border); */
 	
 	font-size:2em;
 	font-weight:bold;
-	/* color:var(--dialog-button-clr); */
+
+  transition: .3s;
+}
+
+dialog button:hover {
+  color: white;
+  transition: .3s;
+  transform: scale(.8);
 }
 
 /* page does not scroll if dialog is shown */
@@ -526,6 +543,9 @@ html:has(dialog[open]) {
 }
 
 
+/*****************/
+/* PICTURE, IMGS */
+/*****************/
 
 
 
@@ -572,5 +592,9 @@ html:has(dialog[open]) {
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.mapPic:hover {
+  cursor: pointer;
 }
 
