@@ -35,10 +35,11 @@ sections.forEach(section => {
 
 function omslaan(event) {
 
-	// Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
-	if (hunnyDialog.open) {
-    	return;
-  	}	
+	// The length property returns the length of a string (W3Schools) - dus hij is hier aan het tellen hoeveel open dialogs er zijn
+	// > 0 betekent groter dan 0 dus als het aantal groter dan 0 is, don't flip the pages
+	if (document.querySelectorAll("dialog[open]").length > 0) {
+		return;
+	}
 
   // dePagina is waar 'the event' will take place
   // deLi is een variabele waarbij het kijkt naar de dichtsbijzijnde list item binnen dePagina
@@ -96,16 +97,11 @@ function openDialog() {
 // OPEN/CLOSE DIALOG 1: MAP
 ///////////////////////////
 const mapImg = document.querySelector(".mapPic");
-const mapDialog = document.querySelector(".mapDialog");
+const mapDialog = document.querySelector(".mapDialog"); //Ik heb hier classes gebruikt omdat de eventlistener anders niet werkte (null error)
 
 mapImg.addEventListener("click", openMapDialog);
 
 function openMapDialog() {
-	// Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
-	if (mapDialog.open) {
-		return;
-	}	
-
 	mapDialog.showModal();
 }
 
@@ -125,9 +121,31 @@ function lightDismiss (event) {
 }
 
 dialogs.forEach(dialog => {
-	dialog.addEventListener('click', lightDismiss);
+	dialog.addEventListener("click", lightDismiss);
 });
 
+
+
+
+
+/////////////////
+// AUDIO IN BG //
+/////////////////
+
+//user has to interact before playing audio
+document.addEventListener("click", function() {
+
+	var bgAudio = document.querySelector("body > audio");
+
+	bgAudio.play();
+
+}, { once: true }); //zodat het 1x afspeelt en niet elke keer wanneer de user de pagina gebruikt
+
+
+
+/////////////////
+// SHAKE FRIENDS IMG //
+/////////////////
 
 
 

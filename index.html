@@ -13,6 +13,9 @@
 </head>
 
 <body>
+	<!--On page load-->
+	<!-- <audio src="./audio/winniethepoohtune2.mp3" preload></audio> -->
+
 	<!-- <header>
 		<h1>Winnie-The-Pooh</h1>
 		<p>A Short History of Winnie-The-Pooh</p>
@@ -20,30 +23,20 @@
 	</header> -->
 
 	<main>
-		<!-- de tijdlijn zelf is een ordered list -->
 
-		<!-- elk list-item is een punt in tijd -->
-		<!-- 11 list-items om te starten -->
-		<!-- bepaal zelf hoeveel je er nodig hebt -->
-		
-		<!-- in elk listitem staat nu een link -->
-		<!-- de link kun je vullen met jouw content -->
-		<!-- of in zijn geheel vervangen door jouw content -->
-		  
-		  
-		<section>
+		<!--Voor styling-->
+		<section> 
 
 			<ol>
-				<!-- <img src="/images/pooh-cover.jpg" alt="Winnie the Pooh by a campfire looking up and sitting on a tree log"> -->
 
-
+				<!-- Li 1: Pagina 1 & 2 -->
 				<li>
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 1 -->
-					<!-------------->
-					<!-------------->
+					<!------------------------>
+					<!------------------------>
+					<!-- PAGINA 1: Metadata -->
+					<!------------------------>
+					<!------------------------>
 
 					<section>
 						
@@ -61,11 +54,11 @@
 
 
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 2 -->
-					<!-------------->
-					<!-------------->
+					<!--------------------->
+					<!--------------------->
+					<!-- PAGINA 2: Intro -->
+					<!--------------------->
+					<!--------------------->
 
 					<section>
 
@@ -130,13 +123,14 @@
 
 
 
+				<!-- Li 2: Pagina 3 & 4 -->
 				<li>
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 3 -->
-					<!-------------->
-					<!-------------->
+					<!------------------------------------->
+					<!------------------------------------->
+					<!-- PAGINA 3: Story start / intro 2 -->
+					<!------------------------------------->
+					<!------------------------------------->
 
 					<section>
 
@@ -159,11 +153,11 @@
 					</section>
 
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 4 -->
-					<!-------------->
-					<!-------------->
+					<!--------------------------------------->
+					<!--------------------------------------->
+					<!-- PAGINA 4: 100 acre woods & dialog -->
+					<!--------------------------------------->
+					<!--------------------------------------->
 
 					<section>
 
@@ -179,11 +173,37 @@
 							<img src="./images/map100acrewoods2.png" alt="winnie and friends"/>
 						</picture>
 
+
+						<!--Dialog-->
+						<!--Class gebruikt omdat de JS anders niet werkte-->
 						<dialog class="mapDialog">
+
 							<form method="dialog">
-								<img src="./images/map100acrewoods.png" alt="Map of 100 Acre Woods">
+
+								<!--img inside dialog-->
+								<img src="./images/map100acrewoodofficial.gif" alt="Map of 100 Acre Woods">
+								<!--Caption img-->
+								<p>Better view of the map</p>
+
+								<p>
+									Oh, how delightful it is to share with you the story of the enchanting forest that inspired the adventures of Winnie-The-Pooh and his dear friends! 
+									This magical place is called Ashdown Forest, nestled in the heart of East Sussex. 
+
+									And do you know what makes it even more special? A. A. Milne's beloved country home at Cotchford Farm, Hartfield, was nestled just north of this enchanting forest. 
+									
+									And it was from here that little Christopher Robin Milne would set off to explore Five Hundred Acre Wood, a wondrously dense beech wood that stretches from Cotchford Farm right into the Forest!
+								</p>
+								<!--Scroll down indicator (arrow pointing down)-->
+								<img src="./images/arrowdown.gif" alt="indication that you can scroll down">
+
+								<!--img inside dialog - ashdown forest-->
 								<img src="./images/ashdownforest.jpeg" alt="Ashdown forest. The real forest that inspired 100 acre woods.">
+								<!--Caption img-->
+								<p>A little peek of Ashdown Forest</p>
+								
+								<!--close dialog-->
 								<button type="submit" aria-label="sluit fact">X</button>
+
 							</form>
 						</dialog>
 
@@ -196,21 +216,20 @@
 							Together, they would have many grand adventures, such as playing games, finding treasure, and going on picnics
 						</p>
 
-						<a href="#">tweede punt in tijd</a>
-
 					</section>
 
 				</li>
 
 
 
+				<!-- Li 3: Pagina 5 & 6 -->
 				<li>
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 5 -->
-					<!-------------->
-					<!-------------->
+					<!---------------------------------->
+					<!---------------------------------->
+					<!-- PAGINA 5: Pooh not so clever -->
+					<!---------------------------------->
+					<!---------------------------------->
 
 					<section>
 
@@ -229,11 +248,11 @@
 					</section>
 					
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 6 -->
-					<!-------------->
-					<!-------------->
+					<!------------------------------------>
+					<!------------------------------------>
+					<!-- PAGINA 6: Friend introductions -->
+					<!------------------------------------>
+					<!------------------------------------>
 
 					<section>
 
@@ -253,6 +272,8 @@
 							His other friends in the forest included Piglet, a timid little pig; 
 						</p> 
 
+						<audio src="./audio/imaybesmallpiglet.mp3" preload></audio>
+
 						<!-- light & darkmode afbeelding switch-->
 						<picture>
 							<source srcset="./images/pigletdrk.png" media="(prefers-color-scheme: dark)"/>
@@ -269,6 +290,8 @@
 							Eeyore, a melancholy donkey; 
 						</p>
 
+						<audio src="./audio/itworkseeyore.mp3"></audio>
+
 						<!-- light & darkmode afbeelding switch-->
 						<picture>
 							<source srcset="./images/eeyoredrk.png" media="(prefers-color-scheme: dark)"/>
@@ -281,13 +304,14 @@
 
 
 
+				<!-- Li 4: Pagina 7 & 8 -->
 				<li>
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 7 -->
-					<!-------------->
-					<!-------------->
+					<!-------------------------------------->
+					<!-------------------------------------->
+					<!-- PAGINA 7: Friend introductions 2 -->
+					<!-------------------------------------->
+					<!-------------------------------------->
 
 					<section>
 
@@ -302,6 +326,8 @@
 						<p>
 							Tigger, a bouncy tiger; 
 						</p>
+
+						<audio src="./audio/Tigger.mp3"></audio>
 
 						<!-- light & darkmode afbeelding switch-->
 						<picture>
@@ -318,6 +344,8 @@
 							Rabbit, a bossy rabbit; 
 						</p>
 
+						<audio src="./audio/rabbitgoodwork.mp3"></audio>
+
 						<!-- light & darkmode afbeelding switch-->
 						<picture>
 							<source srcset="./images/rabbitdrk.png" media="(prefers-color-scheme: dark)"/>
@@ -327,11 +355,11 @@
 					</section>
 
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 8 -->
-					<!-------------->
-					<!-------------->
+					<!------------------------->
+					<!------------------------->
+					<!-- PAGINA 8: Owl intro -->
+					<!------------------------->
+					<!------------------------->
 
 					<section>
 
@@ -362,14 +390,14 @@
 
 
 
-
+				<!-- Li 5: Pagina 9 & 10 -->
 				<li>
 
-					<!-------------->
-					<!-------------->
-					<!-- PAGINA 9 -->
-					<!-------------->
-					<!-------------->
+					<!--------------------------->
+					<!--------------------------->
+					<!-- PAGINA 9: Merchandise -->
+					<!--------------------------->
+					<!--------------------------->
 
 					<section>
 
@@ -387,11 +415,11 @@
 
 					</section>
 
-					<!--------------->
-					<!--------------->
-					<!-- PAGINA 10 -->
-					<!--------------->
-					<!--------------->
+					<!---------------------------->
+					<!---------------------------->
+					<!-- PAGINA 10: Generations -->
+					<!---------------------------->
+					<!---------------------------->
 
 					<section>
 
@@ -412,13 +440,14 @@
 
 
 
+				<!-- Li 6: Pagina 11 & 12 -->
 				<li>
 
-					<!--------------->
-					<!--------------->
-					<!-- PAGINA 11 -->
-					<!--------------->
-					<!--------------->
+					<!---------------------------->
+					<!---------------------------->
+					<!-- PAGINA 11: Comfort now -->
+					<!---------------------------->
+					<!---------------------------->
 
 					<section>
 
@@ -434,11 +463,11 @@
 					</section>
 
 
-					<!--------------->
-					<!--------------->
-					<!-- PAGINA 12 -->
-					<!--------------->
-					<!--------------->
+					<!------------------------>
+					<!------------------------>
+					<!-- PAGINA 12: The End -->
+					<!------------------------>
+					<!------------------------>
 
 					<section>
 
@@ -455,13 +484,16 @@
 
 				</li>
 
+
+
+				<!-- Li 7: Pagina 13 & 14 -->
 				<li>
 
-					<!--------------->
-					<!--------------->
-					<!-- PAGINA 13 -->
-					<!--------------->
-					<!--------------->
+					<!---------------------------->
+					<!---------------------------->
+					<!-- PAGINA 13: Start over? -->
+					<!---------------------------->
+					<!---------------------------->
 
 					<section>
 

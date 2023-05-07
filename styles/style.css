@@ -86,8 +86,13 @@ button:not([disabled]) {
   --bg-color-main-section: rgb(25 58 42);
   --page-color: rgb(255 245 232);
   --page-turn-color: rgb(214 189 156);
+
   --dialog-color: rgb(255 249 237);
   --dialog-txt-clr: rgb(78 34 17);
+  --dialog-btn: rgb(219 99 25);
+  --dialog-btn-hover: black;
+
+  --caption-clr: rgb(190 35 0);
 
   --box-shadow: 0em 0.9em 3em rgba(0, 0, 0, 0.65);
   --page-shadow-right: linear-gradient(90deg, rgba(98, 60, 23, 0.228) 0%, rgba(247,247,247,0) 18%);
@@ -98,6 +103,7 @@ button:not([disabled]) {
 
   --white-space: min(5vw, 4rem);
 
+  --cursor-audio: url("../images/icons8-sound-32.png");
 
 }
 
@@ -105,18 +111,27 @@ button:not([disabled]) {
 /*DARK MODE*/
 
 @media (prefers-color-scheme: dark) {
+  
   :root {
     --body-bg-color: rgb(24 24 31);
     --page-color: rgb(63 85 59);
     --color-font: white;
     --color-headings:rgb(179 194 176);
+
     --dialog-color: rgb(63 85 59);
     --dialog-txt-clr: rgb(232 218 213);
+    --dialog-btn: white;
+    --dialog-btn-hover: rgb(255 174 0);
+
+    --caption-clr: rgb(255 191 30);
+
     --page-shadow-right: linear-gradient(90deg, rgba(1, 1, 1, 0.228) 0%, rgba(2, 2, 2, 0) 18%);
     --page-shadow-left: linear-gradient(-90deg, rgba(69, 69, 69, 0.228) 0%, rgba(72, 72, 72, 0)%);
 
     --font-family: "baskerville-bold", "baskerville", "noto-serif", "Times New Roman", serif;
     --font-decorative: "playfair-display", "domineregular", serif;
+
+    --cursor-audio: url("../images/whiteaudioicon.png");
 
   }
 
@@ -159,7 +174,6 @@ button {
 img {
   margin-top: .5em;
 }
-
 
 
 
@@ -257,7 +271,7 @@ ol {
 	padding:0;
 	list-style:none;
 	
-	perspective:100vmin;
+	perspective:120vmin;
 	transform-style:preserve-3d;
 
   /*cover img*/
@@ -459,6 +473,7 @@ li > section:nth-of-type(3) {
 
 
 
+
 /*Li details op elke pagina*/
 /***************************/
 
@@ -478,6 +493,18 @@ li p:nth-of-type(2):first-letter {
 }
 
 
+/*Li IMGS FRIENDS*/
+
+li:nth-of-type(3) > section:nth-of-type(2) > picture > img {
+  transform: scale(1);
+  transition: .3s;
+}
+
+
+li:nth-of-type(3) > section:nth-of-type(2) > picture > img:hover {
+  transform: scale(1.2);
+  cursor: var(--cursor-audio), default;
+}
 
 
 
@@ -485,7 +512,6 @@ li p:nth-of-type(2):first-letter {
 /***********/
 /* DIALOGS */
 /***********/
-
 
 
 /* the box */
@@ -509,10 +535,6 @@ dialog p {
   font-family: var(--font-family);
 }
 
-dialog img {
-  max-width: 18em;
-}
-
 dialog button {
 	position:absolute;
 	right:.5em;
@@ -521,6 +543,8 @@ dialog button {
 	
 	width:1.5em;
 	aspect-ratio:1/1;
+
+  color: var(--dialog-btn);
 	
 	appearance:none;
 	background:none;
@@ -532,7 +556,7 @@ dialog button {
 }
 
 dialog button:hover {
-  color: white;
+  color: var(--dialog-btn-hover);
   transition: .3s;
   transform: scale(.8);
 }
@@ -542,21 +566,65 @@ html:has(dialog[open]) {
   overflow: hidden;
 }
 
-
-/*****************/
-/* PICTURE, IMGS */
-/*****************/
-
+dialog:nth-of-type(1) img {
+  max-width: 18em;
+}
 
 
+/******************/
+/* DIALOG CLASSES */
+/******************/
+/*Class gebruikt omdat de JS anders niet werkte*/
 
+/*Content inside dialog tag*/
+.mapDialog form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Caption of 100 Acre Wood Map*/
+.mapDialog form p:nth-of-type(1) {
+  color: var(--caption-clr);
+  font-family: var(--font-decorative);
+}
+
+/*The <p> of the main text in dialog*/
+.mapDialog form p:nth-of-type(2) {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+
+/*Caption picture of Ashdown forest*/
+.mapDialog form p:nth-of-type(3) {
+  color: var(--caption-clr);
+  font-family: var(--font-decorative);
+}
+
+/*Standard img features*/
+.mapDialog form img {
+  max-width: 60%;
+  transform: scale(1);
+  transition: .3s;
+}
+
+/*Hover effect on the 100 Acre Woods Map*/
+.mapDialog form img:nth-of-type(1):hover {
+  transform: scale(1.2);
+}
+
+/*Gif of arrow pointing down*/
+.mapDialog form img:nth-of-type(2) {
+  margin: 0.5em;
+  max-width: 2em;
+}
 
 
 /********************************/
 /* DETAILS */
 /* classes, id's andere extra's */
 /********************************/
-
 
 
 /*class voor decoratielijn boven elke pagina*/
@@ -587,14 +655,15 @@ html:has(dialog[open]) {
   cursor: pointer;
 }
 
-.pd-realbear-overlay {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 0.5);
+
+.mapPic img{
+  transform: scale(1);
+  transition: .4s;
 }
 
-.mapPic:hover {
+.mapPic img:hover {
+  transform: scale(1.05);
   cursor: pointer;
 }
+
 

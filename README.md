@@ -196,5 +196,10 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 10. owl img (traced) https://characters.fandom.com/wiki/Owl_(Winnie_the_Pooh) & https://www.disneyclips.com/images2/owl.html
 11. rabbit img (traced) https://en.wikipedia.org/wiki/Rabbit_%28Winnie-the-Pooh%29
 12. Ashdown forest img https://www.geograph.org.uk/photo/5842451
+13. ChatGPT voor hulp met de tekst - input eigen text, gevraagd of het in de stijl van A.A. Milne kon
+14. Arrow down gif https://giphy.com/stickers/HASPA-down-hamburg-haspa-Wtg8Bmgul1Qxc0otod
+15. Audio gif https://giphy.com/stickers/Loquay-audio-loquay-enciende-el-MeDFeqDC4EMFiKEEMn
+16. Audio gif black https://giphy.com/stickers/Loquay-audio-loquay-enciende-el-RhqcTZmOPi4iMzQZ5g
+17. Sound icon by Icons8 https://icons8.com/icons/set/sound--white
 
 </details>
