@@ -193,9 +193,10 @@ hoverTigger.addEventListener("mouseleave", () => {
 });
 
 
+
 //RABBIT
 
-const hoverRabbit = document.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1)");
+const hoverRabbit = document.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(2)");
 const audioRabbit = hoverRabbit.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(2) > audio");
 
 hoverRabbit.addEventListener("mouseenter", () => {
@@ -208,25 +209,16 @@ hoverRabbit.addEventListener("mouseleave", () => {
 });
 
 
-// //Pagina omslaan event listener
-// var sections = document.querySelectorAll("li > section");
+//OWL
 
-// sections.forEach(section => {
-// 	section.addEventListener("click", omslaan);
-	
-// });
+const hoverOwl = document.querySelector("li:nth-of-type(4) > section:nth-of-type(2) > picture:nth-of-type(1)");
+const audioOwl = hoverOwl.querySelector("li:nth-of-type(4) > section:nth-of-type(2) > picture:nth-of-type(1) > audio");
 
-// function omslaan(event) {
+hoverOwl.addEventListener("mouseenter", () => {
+  audioOwl.currentTime = 0; // reset audio to start
+  audioOwl.play(); // play audio
+});
 
-// 	//Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
-// 	if (hunnyDialog.open) {
-// 		return;
-// 	}	
-
-// 	var dePagina = event.target;
-	
-// 	var deLi = dePagina.closest("li");
-	
-
-// 	deLi.classList.toggle("omgeslagen");
-// }
+hoverOwl.addEventListener("mouseleave", () => {
+  audioOwl.pause(); // pause audio
+});

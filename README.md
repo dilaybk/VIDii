@@ -101,23 +101,25 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Meer easter eggs - honing pot van pooh bijvoorbeeld toevoegen
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik heb een honingpot button toegevoegd
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Code netjes maken - het staat een beetje door elkaar heen nu
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik heb bij sommige plekken extra kopjes gegeven en meer ingesprongen
 
 
   ### Bevinding 3:
-  ...
+  Misschien iets met audio doen
+
+  #### oplossing
+  Ik heb audio toegevoegd die afspeelt in de achtergrond 
+  
 
 </details>
 
@@ -130,10 +132,10 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het einde is een beetje leeg dus daar kan ik nog iets mee doen
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb een afbeelding toegevoegd 
 
 
 
@@ -159,19 +161,26 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/mijlpaal1" width="375px" alt="eerste mijlpaal">
+  <img src="readme-images/maniervoordrkmode.png" width="375px" alt="dark mode switch images">
+  <img src="readme-images/kaartdialog" width="375px" alt="dialog van de kaart">
+  <img src="readme-images/dialogdoesntacceptselect" width="375px" alt="wilde niet accepteren">
+  <img src="readme-images/dialogmapcode" width="375px" alt="classes gebruikt voor dialog 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik gebruikte eerder veel classes maar dit keer heb ik beter begrepen hoe ik selectoren kan gebruiken (nth-of-type). Ik ben hierdoor ook meer gaan commenten tussen mijn werk door waardoor ik sneller weer wist waar ik was gebleven.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Pagina omslaan met knoppen, progressiebar zijn niet gelukt. Ik wilde een navigatie maken met het keyboard, maar dit is een van de minst
+  accessible pagina's geworden helaas. Ook wilde ik nog een progressiebar en een knop op het einde waar je op kunt klikken om terug naar het begin te gaan. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ook kostte het super veel tijd om alle afbeeldingen over te trekken. Daarom heb ik maar afbeeldingen gebruikt tussen mijn eigen werk door.
+
+  <img src="readme-images/keyboardstruggles" width="375px" alt="bummer">
 </details>
 
 
@@ -201,5 +210,9 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 15. Audio gif https://giphy.com/stickers/Loquay-audio-loquay-enciende-el-MeDFeqDC4EMFiKEEMn
 16. Audio gif black https://giphy.com/stickers/Loquay-audio-loquay-enciende-el-RhqcTZmOPi4iMzQZ5g
 17. Sound icon by Icons8 https://icons8.com/icons/set/sound--white
+18. child sitting on bench https://www.express.co.uk/entertainment/books/721024/Winnie-Pooh-celebrates-90-anniversary-years-philosophical-talks-UK
+19. Evolution pooh https://poohlovers.tumblr.com/post/120931701513/the-evolution-of-disneys-winnie-the-pooh
+20. Friends looking up https://people.com/books/winnie-the-pooh-day-book-history/
+21. 
 
 </details>
