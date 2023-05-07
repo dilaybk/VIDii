@@ -63,7 +63,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-  <img src="readme-images/fb1.png" width="375px" alt="feedback sessie 1">
+  <img src="./readme-images/fb1.png" width="375px" alt="feedback sessie 1">
   - Misschien moet ik minder 'soorten' Mickeys gebruiken (De belangrijkste/bekendste Mickeys)
   - Objecten en andere characters interactief maken met Mickey
   - Nadenken over de bediening (Scrollen of met een knop)
@@ -71,7 +71,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   - Easter egg: Characters die uit een object verschijnen bijvoorbeeld
   - Easter egg: Referenties naar andere elementen waar Mickey in voorkomt (In Aladdin is er bijvoorbeeld een referentie naar Mickey waarbij 'Genie' de Steamboat Willie tune fluit)
 
-  <img src="readme-images/mickeymouse.png" width="375px" alt="feedback sessie 1">
+  <img src="./readme-images/mickeymouse.png" width="375px" alt="feedback sessie 1">
 
 
   #### oplossing:
@@ -170,8 +170,6 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik gebruikte eerder veel classes maar dit keer heb ik beter begrepen hoe ik selectoren kan gebruiken (nth-of-type). Ik ben hierdoor ook meer gaan commenten tussen mijn werk door waardoor ik sneller weer wist waar ik was gebleven.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
