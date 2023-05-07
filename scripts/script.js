@@ -144,10 +144,68 @@ document.addEventListener("click", function() {
 
 
 /////////////////
-// SHAKE FRIENDS IMG //
+// AUDIO HOVER ON FRIENDS //
 /////////////////
 
+//PIGLET
 
+const hoverPiglet = document.querySelector("li:nth-of-type(3) > section:nth-of-type(2) > picture");
+const audioPiglet = hoverPiglet.querySelector("li:nth-of-type(3) > section:nth-of-type(2) > picture > audio");
+
+hoverPiglet.addEventListener("mouseenter", () => {
+  audioPiglet.currentTime = 0; // reset audio to start
+  audioPiglet.play(); // play audio
+});
+
+hoverPiglet.addEventListener("mouseleave", () => {
+  audioPiglet.pause(); // pause audio
+});
+
+
+
+//EEYORE
+
+const hoverEeyore = document.querySelector("li:nth-of-type(3) > section:nth-of-type(2) > picture:nth-of-type(2)");
+const audioEeyore = hoverEeyore.querySelector("li:nth-of-type(3) > section:nth-of-type(2) > picture:nth-of-type(2) > audio");
+
+hoverEeyore.addEventListener("mouseenter", () => {
+  audioEeyore.currentTime = 0; // reset audio to start
+  audioEeyore.play(); // play audio
+});
+
+hoverEeyore.addEventListener("mouseleave", () => {
+  audioEeyore.pause(); // pause audio
+});
+
+
+
+//TIGGER
+const hoverTigger = document.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1)");
+const audioTigger = hoverTigger.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1) > audio");
+
+hoverTigger.addEventListener("mouseenter", () => {
+  audioTigger.currentTime = 0; // reset audio to start
+  audioTigger.play(); // play audio
+});
+
+hoverTigger.addEventListener("mouseleave", () => {
+  audioTigger.pause(); // pause audio
+});
+
+
+//RABBIT
+
+const hoverRabbit = document.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1)");
+const audioRabbit = hoverRabbit.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(2) > audio");
+
+hoverRabbit.addEventListener("mouseenter", () => {
+  audioRabbit.currentTime = 0; // reset audio to start
+  audioRabbit.play(); // play audio
+});
+
+hoverRabbit.addEventListener("mouseleave", () => {
+  audioRabbit.pause(); // pause audio
+});
 
 
 // //Pagina omslaan event listener
