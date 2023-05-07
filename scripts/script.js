@@ -2,31 +2,16 @@
 console.log("Howdy!");
 
 
-// //Pagina omslaan event listener
-// var sections = document.querySelectorAll("li > section");
 
 
-// sections.forEach(section => {
-//   section.addEventListener("click", omslaan);
-// });
-
-// function omslaan(event) {
-//   //Zodat de pagina's niet blijven omslaan wanneer je in een dialog bent
-//   if (hunnyDialog.open) {
-//     return;
-//   }	
-//   var dePagina = event.target;
-//   var deLi = dePagina.closest("li");
-//   deLi.classList.toggle("omgeslagen");
-// }
 
 
+/////////////////////
+// OMSLAAN PAGINAS //
+/////////////////////
 
 // //Pagina omslaan event listener
 var sections = document.querySelectorAll("li > section");
-// document.addEventListener("keydown", e => {
-// 	console.log(e);
-// });
 
 sections.forEach(section => {
     section.addEventListener("click", omslaan);
@@ -52,26 +37,27 @@ function omslaan(event) {
 
 
 
-// document.addEventListener("keydown", omslaanKey);
+//Pagina omslaan met knoppen -- werkt alleen op 1 pagina
+document.addEventListener("keydown", omslaanKey);
 
-// function omslaanKey (event) {
-// 	var key = event.key;
-// 	if (key == "ArrowLeft") {
+function omslaanKey (event) {
+	var key = event.key;
+	if (key == "ArrowLeft") {
 
-// 		var dePagina = event.target;
-// 		var deLi = dePagina.querySelector("li");
+		var dePagina = event.target;
+		var deLi = dePagina.querySelector("li");
 
-// 		deLi.classList.toggle("omgeslagen");
+		deLi.classList.toggle("omgeslagen");
 
 
-// 	} else if (key == "ArrowRight") {
+	} else if (key == "ArrowRight") {
 		
-// 		var dePagina = event.target;
-// 		var deLi = dePagina.querySelector("li");
+		var dePagina = event.target;
+		var deLi = dePagina.querySelector("li");
 
-// 		deLi.classList.toggle("omgeslagen");
-// 	}
-// };
+		deLi.classList.toggle("omgeslagen");
+	}
+};
 
 
 
@@ -93,6 +79,9 @@ function openDialog() {
 
 
 
+
+
+
 ////////////////////////////
 // OPEN/CLOSE DIALOG 1: MAP
 ///////////////////////////
@@ -104,6 +93,11 @@ mapImg.addEventListener("click", openMapDialog);
 function openMapDialog() {
 	mapDialog.showModal();
 }
+
+
+
+
+
 
 
 //////////////////////////////////////////////
@@ -128,6 +122,7 @@ dialogs.forEach(dialog => {
 
 
 
+
 /////////////////
 // AUDIO IN BG //
 /////////////////
@@ -143,9 +138,12 @@ document.addEventListener("click", function() {
 
 
 
-/////////////////
+
+
+
+////////////////////////////
 // AUDIO HOVER ON FRIENDS //
-/////////////////
+////////////////////////////
 
 //PIGLET
 
@@ -180,6 +178,7 @@ hoverEeyore.addEventListener("mouseleave", () => {
 
 
 //TIGGER
+
 const hoverTigger = document.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1)");
 const audioTigger = hoverTigger.querySelector("li:nth-of-type(4) > section:nth-of-type(1) > picture:nth-of-type(1) > audio");
 
@@ -207,6 +206,7 @@ hoverRabbit.addEventListener("mouseenter", () => {
 hoverRabbit.addEventListener("mouseleave", () => {
   audioRabbit.pause(); // pause audio
 });
+
 
 
 //OWL

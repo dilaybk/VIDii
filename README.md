@@ -34,21 +34,22 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Beter worden in animeren met CSS - heel misschien JS als ik het niet te moeilijk vind
-  - Horizontaal scrollen heb ik nooit gedaan dus dat lijkt me leuk om uit te proberen
+  - ~~Horizontaal scrollen heb ik nooit gedaan dus dat lijkt me leuk om uit te proberen~~
   - In het algemeen weer het coderen een beetje oppakken
+  - Een cosy gevoel geven aan de gebruiker van mijn boekje - focussen op UX
+  - Beter worden in visualisaties en het 'aesthetically pleasing' maken
 
   ### To-Do List:
   - ~~Dark Mode~~
-  - Tekeningen per pagina
+  - X Eigen Tekeningen per pagina 
   - ~~Font-Face dingen doen~~
-  - Overlays
-  - Tekst klopt nog niet helemaal (nth-of-type checken)
-  - Laatste pagina 'the end'
-  - page flip sound
-  - progressie balk -> hoeveel pagina's nog
-  - toegankelijkheid (met knopjes door de pagina's)
-  - focus (visible), active toevoegen
-  - focus is met de muis en toetsenbord en focusvisible is alleen met het toetsenbord
+  - ~~Overlays~~
+  - ~~Tekst klopt nog niet helemaal (nth-of-type checken)~~
+  - ~~Laatste pagina 'the end'~~
+  - X page flip sound 
+  - X progressie balk -> hoeveel pagina's nog
+  - X toegankelijkheid (met knopjes door de pagina's)
+  - ~~focus (visible), active toevoegen~~
 
  
 </details>
@@ -105,6 +106,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   #### oplossing:
   Ik heb een honingpot button toegevoegd
+  <img src="./readme-images/hunnypage.png" width="375px" alt="pagina van de hunny knop">
 
 
   ### Bevinding 2:
@@ -112,6 +114,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   #### oplossing:
   Ik heb bij sommige plekken extra kopjes gegeven en meer ingesprongen
+  <img src="./readme-images/comments.png" width="375px" alt="comments">
 
 
   ### Bevinding 3:
@@ -119,6 +122,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   #### oplossing
   Ik heb audio toegevoegd die afspeelt in de achtergrond 
+
   
 
 </details>
@@ -132,23 +136,25 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Het einde is een beetje leeg dus daar kan ik nog iets mee doen
+  Het einde is een beetje leeg dus daar kan ik nog iets mee doen. Ik had alleen een tekst the end en een niet werkend linkje eerst
 
   #### oplossing:
   Ik heb een afbeelding toegevoegd 
-
+  <img src="./readme-images/laatsteblz.png" width="375px" alt="pagina van de nieuwe blz">
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  tabben gaat niet soepel
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Geen idee hoe ik dit kan oplossen. Ik heb er uren aan gezeten maar heb niet genoeg kennis om in te zien wat ik fout doe.
 
 
   ### Bevinding 3:
-  ...
+  Tigger bijvoorbeeld toevoegen die door het scherm springt
+
+  #### oplossing
+  Heb hier geen tijd meer voor gehad.
 
 </details>
 
@@ -174,11 +180,17 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   ### Dit was lastig/Is niet gelukt:
   Pagina omslaan met knoppen, progressiebar zijn niet gelukt. Ik wilde een navigatie maken met het keyboard, maar dit is een van de minst
-  accessible pagina's geworden helaas. Ook wilde ik nog een progressiebar en een knop op het einde waar je op kunt klikken om terug naar het begin te gaan. 
+  accessible pagina's geworden helaas. Ook wilde ik nog een progressiebar en een knop op het einde waar je op kunt klikken om terug naar het begin te gaan.  Ik heb wel veel tijd besteed om te onderzoeken hoe je met links en rechts knoppen bedient maar het lukte uiteindelijk maar op 1 pagina.
 
   Ook kostte het super veel tijd om alle afbeeldingen over te trekken. Daarom heb ik maar afbeeldingen gebruikt tussen mijn eigen werk door.
 
+  Ik heb eigenlijk tijd tekort gehad voor de opdracht. Ik had ook vragen maar door de vakantie kon ik ze niet stellen.
+
   <img src="readme-images/keyboardstruggles" width="375px" alt="bummer">
+
+  ### ~
+  Ookal heb ik mijn website niet af gekregen, ben ik best trots op wat ik heb bereikt. Ik durf meer dingen uit te proberen en heb zeker veel over JS geleerd. Ik denk om voor de herkansing te gaan om het boekje af te maken en het accessible te maken. Ik vond het een leuke opdracht waarbij ik het coderen weer een beetje heb opgepakt. 
+
 </details>
 
 
@@ -211,6 +223,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 18. child sitting on bench https://www.express.co.uk/entertainment/books/721024/Winnie-Pooh-celebrates-90-anniversary-years-philosophical-talks-UK
 19. Evolution pooh https://poohlovers.tumblr.com/post/120931701513/the-evolution-of-disneys-winnie-the-pooh
 20. Friends looking up https://people.com/books/winnie-the-pooh-day-book-history/
-21. 
+21. Sanne voor de hulp tijdens de les en codepens
 
 </details>
