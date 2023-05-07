@@ -167,11 +167,11 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/mijlpaal1" width="375px" alt="eerste mijlpaal">
+  <img src="readme-images/mijlpaal1.png" width="375px" alt="eerste mijlpaal">
   <img src="readme-images/maniervoordrkmode.png" width="375px" alt="dark mode switch images">
-  <img src="readme-images/kaartdialog" width="375px" alt="dialog van de kaart">
-  <img src="readme-images/dialogdoesntacceptselect" width="375px" alt="wilde niet accepteren">
-  <img src="readme-images/dialogmapcode" width="375px" alt="classes gebruikt voor dialog 2">
+  <img src="readme-images/kaartdialog.png" width="375px" alt="dialog van de kaart">
+  <img src="readme-images/dialogdoesntacceptselect.png" width="375px" alt="wilde niet accepteren">
+  <img src="readme-images/dialogmapcode.png" width="375px" alt="classes gebruikt voor dialog 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -186,7 +186,7 @@ Mijn startniveau is: voornamelijk blauw, maar misschien voeg ik nog rode piste d
 
   Ik heb eigenlijk tijd tekort gehad voor de opdracht. Ik had ook vragen maar door de vakantie kon ik ze niet stellen.
 
-  <img src="readme-images/keyboardstruggles" width="375px" alt="bummer">
+  <img src="./readme-images/keyboardstruggles.png" width="375px" alt="bummer">
 
   ### ~
   Ookal heb ik mijn website niet af gekregen, ben ik best trots op wat ik heb bereikt. Ik durf meer dingen uit te proberen en heb zeker veel over JS geleerd. Ik denk om voor de herkansing te gaan om het boekje af te maken en het accessible te maken. Ik vond het een leuke opdracht waarbij ik het coderen weer een beetje heb opgepakt. 
